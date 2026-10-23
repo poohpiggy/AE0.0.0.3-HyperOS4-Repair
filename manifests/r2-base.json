@@ -1,0 +1,262 @@
+{
+  "revision": 2,
+  "model": "MIX2S",
+  "os": "HyperOS 4",
+  "api": 37,
+  "files": [
+    {
+      "image": "system.img",
+      "path": "/product/overlay/DevicesAndroidOverlay.apk",
+      "size": 16892,
+      "sha256": "684682026111edb7e7e6df70a36e2e372b4d9fc72c795e34213a7fdc40cc123c",
+      "mode": "0o644"
+    },
+    {
+      "image": "system.img",
+      "path": "/product/overlay/DevicesOverlay.apk",
+      "size": 23609950,
+      "sha256": "542cc541797c9b5ff41a200e4eeebc9eba718613acb2d6d0ab743c2551bdc8b2",
+      "mode": "0o644"
+    },
+    {
+      "image": "system.img",
+      "path": "/sys/class/power_supply/battery/battery_charging_enabled",
+      "size": 2,
+      "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+      "mode": "0o644"
+    },
+    {
+      "image": "system.img",
+      "path": "/sys/class/power_supply/battery/charging_enabled",
+      "size": 2,
+      "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+      "mode": "0o644"
+    },
+    {
+      "image": "system.img",
+      "path": "/sys/class/power_supply/battery/input_suspend",
+      "size": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "mode": "0o644"
+    },
+    {
+      "image": "system.img",
+      "path": "/sys/class/qcom-battery/input_suspend",
+      "size": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "mode": "0o644"
+    },
+    {
+      "image": "system.img",
+      "path": "/system/bin/hw/aemu-radio-bridge",
+      "size": 67248,
+      "sha256": "2043dab89ad3a7d2a7065ab742a741ee52cabe718537b12a4399938b156462aa",
+      "mode": "0o755"
+    },
+    {
+      "image": "system.img",
+      "path": "/system/etc/aemu-compat/backups/dynamicicons.original",
+      "size": 1065562,
+      "sha256": "2f08b0d0ecbfadc81ecd0baa6695158f5b4d64e4feed52d9894482cbf9bb3c55",
+      "mode": "0o644"
+    },
+    {
+      "image": "system.img",
+      "path": "/system/etc/aemu-compat/hyos_spawner.gles",
+      "size": 236496,
+      "sha256": "b2bce29f09913196c850147d0dd3f0d0e893686310a9512f0e5a9347bda1c2aa",
+      "mode": "0o755"
+    },
+    {
+      "image": "system.img",
+      "path": "/system/etc/aemu-compat/lib/libGLES_aemu.upload-sync.so",
+      "size": 656008,
+      "sha256": "4c683e5a52737babea40a89fed5b51c9d05b427b6ae0e756e42894c6140f4562",
+      "mode": "0o644"
+    },
+    {
+      "image": "system.img",
+      "path": "/system/etc/aemu-compat/lib/libGLES_aemu.yuv-candidate.so",
+      "size": 628744,
+      "sha256": "4da93a2918c81ab33c3f20528f6cb2e4a65e8e40b451d666efa425aeebe23e51",
+      "mode": "0o644"
+    },
+    {
+      "image": "system.img",
+      "path": "/system/etc/aemu-compat/lib/libhyper_os_flutter.so",
+      "size": 18350256,
+      "sha256": "fbbe9785e9d81fa88eb085df0bb6ea38f5dc181fba77eeaf562d50fed6b00a4b",
+      "mode": "0o644"
+    },
+    {
+      "image": "system.img",
+      "path": "/system/etc/aemu-compat/lib/librustutils.dylib.so",
+      "size": 89296,
+      "sha256": "9504659ec7674f7011f1fcacc10e2aff6e3445b167bb64e6d8ed4da6fa994a57",
+      "mode": "0o644"
+    },
+    {
+      "image": "system.img",
+      "path": "/system/etc/aemu-compat/settings.sh",
+      "size": 1205,
+      "sha256": "97a8cb0d24f283d8e3f80ccf4b0f39c2a4059f3b9da6a55e766853a3898b149b",
+      "mode": "0o755"
+    },
+    {
+      "image": "system.img",
+      "path": "/system/etc/aemu-compat/start-spawner.sh",
+      "size": 1311,
+      "sha256": "3a36748a0cbb9c788952b87981a8090cf69eabe8b1c7c15547e5c4423bc72d25",
+      "mode": "0o755"
+    },
+    {
+      "image": "system.img",
+      "path": "/system/etc/aemu-compat/start-surfaceflinger.sh",
+      "size": 503,
+      "sha256": "f0787678404b65b977992e273bb253b7523ad7b937b530a3322b0a0b8093bdc2",
+      "mode": "0o755"
+    },
+    {
+      "image": "system.img",
+      "path": "/system/etc/font_fallback.xml",
+      "size": 64429,
+      "sha256": "5e40ab1df2e1bff6b931c97bef208227f55cb446c719c710a9fcd451668248d1",
+      "mode": "0o644"
+    },
+    {
+      "image": "system.img",
+      "path": "/system/etc/fonts.xml",
+      "size": 117200,
+      "sha256": "4b3a8bc2aa5972d6c53052c79f8ba106af2afba8254ec0fcfc0e71d95d7320d9",
+      "mode": "0o644"
+    },
+    {
+      "image": "system.img",
+      "path": "/system/etc/init/aemu-hidl-memory.rc",
+      "size": 309,
+      "sha256": "313336d872e7f4ad7d68f0f9623834cc5d99ee3b1308d59d62d2f5f3adb95bc5",
+      "mode": "0o644"
+    },
+    {
+      "image": "system.img",
+      "path": "/system/etc/init/aemu-hyos-spawner.rc",
+      "size": 406,
+      "sha256": "8b6ca6c8b2f641b3beb5ae480e08188b5a91ef496e08a4d904707d0f682e65d1",
+      "mode": "0o644"
+    },
+    {
+      "image": "system.img",
+      "path": "/system/etc/init/aemu-radio-bridge.rc",
+      "size": 180,
+      "sha256": "13910c939c8aa6f407d8c833a29887465010814bbad63608071b934285d0394f",
+      "mode": "0o644"
+    },
+    {
+      "image": "system.img",
+      "path": "/system/etc/init/zz-aemu-log-cleanup.rc",
+      "size": 435,
+      "sha256": "a36b2552645aa97323c8aad67fcdc7a087ab7fe1819441766a801f387a579d07",
+      "mode": "0o644"
+    },
+    {
+      "image": "system.img",
+      "path": "/system/etc/init/zz-aemu-video-surfaceflinger.rc",
+      "size": 328,
+      "sha256": "18df0fed94749c7c57324cce7f67eb99ef9ef27bb1ff4a37c6b8725c8a0a7c59",
+      "mode": "0o644"
+    },
+    {
+      "image": "system.img",
+      "path": "/system/etc/sysconfig/aemu-compat.xml",
+      "size": 300,
+      "sha256": "6670105224ca2346d47acdd0ecc9599fe60ca69eeaab748bc714f0a3226cff5c",
+      "mode": "0o644"
+    },
+    {
+      "image": "system.img",
+      "path": "/system/lib64/libandroid.so",
+      "size": 336120,
+      "sha256": "d004526baf1d2e2ce7391638abe8ce97b5d8f66ddd9662cbaa99bd252f39f477",
+      "mode": "0o644"
+    },
+    {
+      "image": "system.img",
+      "path": "/system/lib64/libhwui.so",
+      "size": 17465392,
+      "sha256": "2cdd99acac96c13f3cc4d144696758febeee276229b7b419910a8de4b3ebde95",
+      "mode": "0o644"
+    },
+    {
+      "image": "system.img",
+      "path": "/system/lib64/liblog.so",
+      "size": 116651,
+      "sha256": "0f84a55fa85d04bd305cb3d90e01d8e0b2a538b81b4cdd9132d631dc9c1e94ac",
+      "mode": "0o644"
+    },
+    {
+      "image": "system.img",
+      "path": "/system/media/theme/default/dynamicicons",
+      "size": 1215493,
+      "sha256": "22afd47bd2ac5c67256779fe3153b348b62cd3484d0c5037e4fcb204652c9e6e",
+      "mode": "0o644"
+    },
+    {
+      "image": "system.img",
+      "path": "/system_ext/lib64/libmisurfaceflinger.so",
+      "size": 685800,
+      "sha256": "688dd8d66a0edabf09b952a40d47668b7163235b8f9c920281a8bddb1910bdf3",
+      "mode": "0o644"
+    },
+    {
+      "image": "system.img",
+      "path": "/system/build.prop",
+      "size": 13642,
+      "sha256": "c7f3e52da537eb329204f2f6b52f4fd0cb1778a369e0747726a403b8010d9b9d",
+      "mode": "0o644"
+    }
+  ],
+  "scope": "AE guest, GLES only; no host/AE APK modification",
+  "properties": {
+    "debug.hwui.renderer": "skiagl",
+    "ro.hwui.use_vulkan": "false",
+    "persist.sys.hwui.partial.vk": "false",
+    "persist.sys.vk_mode_enabled": "false",
+    "debug.flutter.renderer": "impelleropengl",
+    "debug.renderengine.backend": "skiagl",
+    "ro.hardware.vulkan": "",
+    "persist.sys.vk.com.android.settings": "0",
+    "persist.sys.vk.com.miui.home": "0",
+    "persist.sys.vk.com.android.systemui": "0",
+    "persist.sys.vk.com.miui.aod": "0",
+    "persist.sys.vk.com.miui.miwallpaper": "0",
+    "persist.sys.vk.com.android.thememanager": "0",
+    "ro.sf.lcd_density": "240",
+    "debug.aemu.gl": "3",
+    "persist.sys.force_ignore_blur": "false",
+    "persist.sys.miui_resolution": "540,960,240",
+    "persist.sys.miui_default_resolution": "540x960",
+    "persist.sys.rust_runtime_active": "1",
+    "rust.runtime_active": "1"
+  },
+  "filesystem_checks": "system and vendor: e2fsck -fn exit 0",
+  "limitations": [
+    "Clock/calendar use complete static preview icons; calendar date is an illustration.",
+    "Vendor log cleanup is partial; encrypted/direct native logging may still appear.",
+    "AE virtual modem only; not physical-phone flashing firmware.",
+    "No user data, accounts, music or test programs included."
+  ],
+  "images": {
+    "system.img": {
+      "size": 6788947968,
+      "sha256": "15eb69bb8bd0bfb4a6d12d4d529ae360f01d5c791920171c9fe00d75cf79e220"
+    },
+    "vendor.img": {
+      "size": 699158528,
+      "sha256": "594f8fe404d6dad21f4adc5014e6983b3d739bfd9e5f019dd3908edce87d3815"
+    },
+    "boot.img": {
+      "size": 67108864,
+      "sha256": "1b6445680f87f9758881c61ff10229267c06dfb28d91c8e121a8cbec0ab3f9a9"
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "revision": 3,
+  "scope": "AE guest only",
+  "changes": [
+    {
+      "path": "/system/etc/aemu-compat/backups/MIUIBrowser.original.apk",
+      "sha256": "8c097aeb2f7d9232cd9dc5c974fdf8054978482fa86a34a5e7d2afe5b9844a23",
+      "size": 2686648,
+      "mode": "0o644"
+    },
+    {
+      "path": "/product/priv-app/MIUIBrowser/MIUIBrowser.apk",
+      "removed_from_scan": true,
+      "backup": "/system/etc/aemu-compat/backups/MIUIBrowser.original.apk"
+    },
+    {
+      "path": "/product/app/MIUIBrowserOfficial/MIUIBrowser.apk",
+      "sha256": "1f5e546a133a4b6530dd183e711648a6de0d0e4c78049b646c2e52bf4035d75a",
+      "size": 259017181,
+      "mode": "0o644"
+    },
+    {
+      "path": "/system/etc/aemu-compat/settings.sh",
+      "sha256": "78438f17487b27cc9a11bdf0abbbe0f2f8ef707c0c0a0873e20e2327825711e5",
+      "size": 2956,
+      "mode": "0o755"
+    },
+    {
+      "path": "/system/etc/aemu-compat/start-spawner.sh",
+      "sha256": "81cbe05f981c5f00b6576c436cae8b294c7c86f0891a75289ac1bb9bcc9ea093",
+      "size": 2344,
+      "mode": "0o755"
+    },
+    {
+      "path": "/system_ext/etc/permissions/aemu-mi-ext-libraries.xml",
+      "sha256": "8286dc6055d835a4828b16d6ebe168e56c3bc5e0cd2e506174394db23b7c6d4a",
+      "size": 273,
+      "mode": "0o644"
+    },
+    {
+      "path": "/system_ext/etc/permissions/aemu-rustruntime-v3.xml",
+      "sha256": "00a27797e08a15a6609779f87acb744cb579a4e02ef07bc88f2fb94f84c3915d",
+      "size": 347,
+      "mode": "0o644"
+    },
+    {
+      "path": "/system/build.prop",
+      "sha256": "f80f6152dc299974dbca2cfa5b0832dc012ca4a360ac3f70a8bf4d3bced4d517",
+      "size": 13699,
+      "mode": "0o644"
+    }
+  ],
+  "images": {
+    "system.img": {
+      "size": 7325818880,
+      "sha256": "5d2aace81d4b4df209d306e2a0796a4d24dee6867873089fb55b4a880ab8b4c8"
+    },
+    "vendor.img": {
+      "size": 699158528,
+      "sha256": "594f8fe404d6dad21f4adc5014e6983b3d739bfd9e5f019dd3908edce87d3815"
+    },
+    "boot.img": {
+      "size": 67108864,
+      "sha256": "1b6445680f87f9758881c61ff10229267c06dfb28d91c8e121a8cbec0ab3f9a9"
+    }
+  },
+  "display": {
+    "resolution": [
+      1080,
+      2160
+    ],
+    "logical_dpi": 403,
+    "ae_instance_settings": "Set 1080x2160 / 403 in AE before first boot; importer may choose its own preset."
+  },
+  "filesystem_checks": "system/vendor: e2fsck -fn exit 0",
+  "validation": "Individual fixes verified on existing guest; archive filesystem and every decompressed ZIP member verified. This new archive has not been fresh-import boot tested.",
+  "privacy": "No VM user-data database, account, download history, media, or private app state included."
+}

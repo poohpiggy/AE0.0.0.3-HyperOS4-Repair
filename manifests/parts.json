@@ -1,0 +1,25 @@
+{
+  "format": "raw-binary-parts-v1",
+  "archive": {
+    "name": "HyperOS4-AE-MIX2S-R3-1080p403-Apps-Ringtone.zip",
+    "size": 4393500616,
+    "sha256": "dd01bd45975d6b8a02a69aa0080320b47e8f160781fe2bf3940ee091f2919333"
+  },
+  "parts": [
+    {
+      "name": "HyperOS4-AE-MIX2S-R3-1080p403-Apps-Ringtone.zip.part001",
+      "size": 1610612736,
+      "sha256": "8bb22b83ceecebafbae868efc6929a4848d9bc2dac93107176bd64d12e5e5f88"
+    },
+    {
+      "name": "HyperOS4-AE-MIX2S-R3-1080p403-Apps-Ringtone.zip.part002",
+      "size": 1610612736,
+      "sha256": "02265a97c34d969c1f0c7bc3d38997e8933c17cb5eaa454360f4a4366bdcaa9b"
+    },
+    {
+      "name": "HyperOS4-AE-MIX2S-R3-1080p403-Apps-Ringtone.zip.part003",
+      "size": 1172275144,
+      "sha256": "eb168e73c2c17c2f03213e7a8453fceeda3ec8eacabfe3a3729f4eeb8015005f"
+    }
+  ]
+}

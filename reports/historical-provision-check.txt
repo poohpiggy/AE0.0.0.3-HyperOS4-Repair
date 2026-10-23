@@ -1,0 +1,1 @@
+PASS: existing-user defaults preserved; density synchronized; valid scans mark completion; failed scans do not mark completion; repeat boot remains idempotent.
