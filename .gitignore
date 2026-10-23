@@ -1,0 +1,17 @@
+# Keep firmware, app binaries, credentials and VM data out of Git.
+*.img
+*.apk
+*.zip
+*.tar.xz
+*.part[0-9]*
+*.partial
+*.pem
+*.key
+.env
+.gh-config/
+__pycache__/
+*.py[cod]
+/build/
+/dist/
+/work/
+/images/
