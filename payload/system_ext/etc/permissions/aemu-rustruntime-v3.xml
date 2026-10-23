@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<permissions>
+    <!-- The ROM ships the marker JAR and native runtime, but omits this entry.
+         Native compatibility and application startup must be verified separately. -->
+    <library name="hyperos.rustruntime.v3"
+             file="/system_ext/framework/hyperos.rustruntime.jar" />
+</permissions>

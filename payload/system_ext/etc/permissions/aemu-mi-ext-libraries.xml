@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<permissions>
+    <library name="hyperos.rustruntime.v5" file="/system_ext/framework/hyperos.rustruntime.jar" />
+    <library name="miui-uninstall-empty.jar" file="/mi_ext/product/framework/miui-uninstall-empty.jar" />
+</permissions>
