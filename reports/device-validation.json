@@ -1,0 +1,20 @@
+{
+  "reported_on": "2026-10-24",
+  "timezone": "Asia/Shanghai",
+  "source": "Project owner confirmation during publication",
+  "ae_baseline": "0.0.0.3",
+  "archive": "HyperOS4-AE-MIX2S-R3-1080p403-Apps-Ringtone.zip",
+  "archive_sha256": "dd01bd45975d6b8a02a69aa0080320b47e8f160781fe2bf3940ee091f2919333",
+  "devices": [
+    {
+      "name": "K80",
+      "import_and_run": "pass"
+    },
+    {
+      "name": "Neo11",
+      "import_and_run": "pass"
+    }
+  ],
+  "scope": "Owner-confirmed import and run; no claim of a complete per-feature test suite.",
+  "original_build_receipt_preserved": true
+}

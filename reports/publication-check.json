@@ -19,7 +19,7 @@
     "count": 3,
     "each_under_2_gib": true
   },
-  "fresh_import_boot_tested": false,
+  "fresh_import_boot_tested": true,
   "environment_changes": "No global software installation or PATH change; temporary CLI and build files scoped to task workspace.",
   "full_original_zip_verification": {
     "archive": "HyperOS4-AE-MIX2S-R3-1080p403-Apps-Ringtone.zip",
@@ -38,5 +38,6 @@
     "source": "three release parts",
     "restored_bytes": 4393500616,
     "restored_sha256": "dd01bd45975d6b8a02a69aa0080320b47e8f160781fe2bf3940ee091f2919333"
-  }
+  },
+  "device_validation_source": "Owner report on 2026-10-24: K80 and Neo11 import and run passed"
 }
