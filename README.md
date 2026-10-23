@@ -2,9 +2,9 @@
 
 > **基于 AEmulator（AE）0.0.0.3。** 在红米 K80 上运行 HyperOS 4 / MIX2S 客体，保留原生桌面，采用 OpenGL ES 渲染路径。
 
-这是我排查 AE 虚拟机兼容问题、验证修复并整理 R3 导入包的工程记录。仓库包含保留下来的修复脚本、库注册声明、打包工具和校验依据。**补丁作用于 AE 客体；不修改宿主系统或 AE APK。包体仅供 AE 导入，不用于实体 MIX2S 刷机。**
+这是我排查 AE 虚拟机兼容问题、验证修复并整理 R3 导入包的折腾记录。仓库包含保留下来的修复脚本、库注册声明、打包工具和校验依据。文中的“客体”就是 AE 里面的虚拟系统。**补丁只改这里，不修改宿主系统或 AE APK。包体仅供 AE 导入，不用于实体 MIX2S 刷机。**
 
-[修复过程](docs/journey.md) · [修改日志](CHANGELOG.md) · [导入说明](docs/import-guide.md) · [验证记录](docs/validation.md) · [原包与致谢](NOTICE.md)
+[折腾经过](docs/journey.md) · [怎么查错的](docs/troubleshooting.md) · [最早的 VK → GL](docs/gles-migration.md) · [修改日志](CHANGELOG.md) · [导入说明](docs/import-guide.md) · [验证记录](docs/validation.md) · [原包与致谢](NOTICE.md)
 
 ## 当前版本
 
@@ -31,7 +31,7 @@ R2 已有的 GLES、WebView、音频、模拟电话/短信兼容改动由基包�
 
 ## 下载与导入
 
-查看本仓库 **Releases**。包体按 GitHub 单附件限制分卷；下载所有分卷及合并工具后，按 [合并说明](docs/release-download.md) 还原原始 ZIP。
+[下载最终 R3 Release](https://github.com/poohpiggy/AE0.0.0.3-HyperOS4-Repair/releases/tag/r3-ae0.0.0.3)。包体按 GitHub 单附件限制分卷；下载所有分卷及合并工具后，按 [合并说明](docs/release-download.md) 还原原始 ZIP。
 
 原始 ZIP SHA-256：
 
@@ -54,9 +54,9 @@ docs/         排查过程、修复原理、导入和验证说明
 
 打包入口见 [构建说明](docs/build.md)。本仓库不提交 ROM 镜像、商店 APK、旧实例用户数据或完整聊天原文。
 
-## 历史记录说明
+## 关于这些 commits
 
-此前排查发生在 2026-10-21 至 2026-10-24（UTC+8）。本仓库的 commits 是事后按主题整理的实际文件提交，使用整理当天的时间；它们不是当时逐轮调试的原始 Git 历史。修改日志同时记录有效修复、撤回试验与尚未验证事项。
+之前的排查发生在 2026-10-21 至 2026-10-24（UTC+8）。这些 commits 是现在按实际改动分组补整理的，时间也是现在，没有往回改日期。有效的修复、没用的尝试、后来撤掉的东西和还没测到的部分都会写清楚。
 
 ## 许可与来源
 
