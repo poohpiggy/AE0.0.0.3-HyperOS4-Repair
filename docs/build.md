@@ -1,4 +1,4 @@
-# R3 构建与核验
+# 这个包是怎么打出来的
 
 基线：**AE 0.0.0.3**。工具整理自实际使用过的 R3 构建脚本，原始路径改为命令行参数。
 
@@ -12,7 +12,7 @@
 工具会检查输入并在单独工作目录处理镜像，不连接 ADB、不修改手机或运行中的 AE。
 
 ```sh
-python3 tools/build_r3.py \
+python3 tools/build_package.py \
   --base-zip /path/to/R2.zip \
   --browser-apk /path/to/MIUIBrowser.apk \
   --work-dir /path/to/empty-r3-build \
@@ -26,8 +26,8 @@ python3 tools/build_r3.py \
 ## 独立验证历史 ZIP
 
 ```sh
-python3 tools/verify_archive.py /path/to/HyperOS4-AE-MIX2S-R3-1080p403-Apps-Ringtone.zip \
-  --receipt manifests/r3-archive.json
+python3 tools/verify_archive.py /path/to/HyperOS4-AE0.0.0.3.zip \
+  --receipt manifests/archive.json
 ```
 
 它检查归档整体大小/SHA-256、成员集合、重复路径、不安全路径、各成员大小及 SHA-256，并通过完整解压触发 ZIP CRC 校验。

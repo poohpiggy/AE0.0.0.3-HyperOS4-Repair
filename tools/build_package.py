@@ -4,7 +4,7 @@ import hashlib, json, os, re, shutil, subprocess, time, zipfile
 # Configured by CLI; all image mutation is confined to an empty work directory.
 ROOT = Path(__file__).resolve().parents[1]
 W = OUT = BASE = I = P = None
-NAME = 'HyperOS4-AE-MIX2S-R3-1080p403-Apps-Ringtone.zip'
+NAME = 'HyperOS4-AE0.0.0.3.zip'
 CHUNK = 4*1024*1024
 REPORT = {'revision':3, 'scope':'AE guest only', 'changes':[], 'images':{}}
 
@@ -170,7 +170,7 @@ def package():
     REPORT['privacy']='No VM user-data database, account, download history, media, or private app state included.'
     report=W/'AE-INTEGRATED.json';report.write_text(json.dumps(REPORT,ensure_ascii=False,indent=2))
     readme=W/'使用说明.md'
-    readme.write_text('''# HyperOS 4 · MIX2S · AE R3
+    readme.write_text('''# HyperOS 4 for AE 0.0.0.3
 
 仅用于 AEmulator 虚拟机导入，不用于实体手机刷机。
 
@@ -210,7 +210,7 @@ def package():
     receipt={'archive':dest.name,'size':dest.stat().st_size,'sha256':digest,'compression':'ZIP Deflate level 9, ZIP64','members':expected,'filesystem_checks':REPORT['filesystem_checks'],'fresh_import_boot_tested':False}
     (OUT/(NAME+'.json')).write_text(json.dumps(receipt,ensure_ascii=False,indent=2))
     (OUT/(NAME+'.sha256')).write_text(digest+'  '+NAME+'\n')
-    shutil.copyfile(readme,OUT/'AE-R3使用说明.md')
+    shutil.copyfile(readme,OUT/'使用说明.md')
     log('READY',json.dumps(receipt,ensure_ascii=False))
 
 def main():

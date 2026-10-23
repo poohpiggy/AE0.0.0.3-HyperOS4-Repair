@@ -30,6 +30,6 @@ python3 tools/join_release.py /path/to/downloads/parts.json
 
 ## 导入
 
-只将合并后的完整 ZIP 导入 **AE 0.0.0.3**。首次启动前手动配置 **1080×2160 / 403 DPI**；初始化后重启一次，详见 [导入说明](import-guide.md)。
+只将合并后的 `HyperOS4-AE0.0.0.3.zip` 导入 **AE 0.0.0.3**。首次启动前手动配置 **1080×2160 / 403 DPI**；初始化后重启一次，详见 [导入说明](import-guide.md)。
 
 分卷和合并不会改变原 ZIP 内任何成员；原始 SHA-256 保留于 `manifests/*.sha256`。
