@@ -1,4 +1,4 @@
-# 运行边界与构建链路
+# 系统里改了哪里，包又是怎么做出来的
 
 ```mermaid
 flowchart LR
@@ -22,7 +22,7 @@ flowchart TD
     Fsck --> Zip[Deflate 9 / ZIP64]
     Zip --> Verify[全成员大小 / SHA-256 / CRC]
     Verify --> Parts[原 ZIP 无损分为 3 卷]
-    Parts --> Release[唯一 R3 Release]
+    Parts --> Release[Release 下载]
 ```
 
 图中 R2 原生组件由基包继承。本仓库的源文件不足以从原厂 ROM 重建整个 R2；参数化打包工具需要匹配清单的既有 R2 输入。

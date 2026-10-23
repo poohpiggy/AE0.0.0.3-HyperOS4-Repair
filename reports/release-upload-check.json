@@ -1,0 +1,75 @@
+{
+  "verified_at": "2026-10-24T02:49:52.693016+08:00",
+  "release_title": "HyperOS 4 for AE 0.0.0.3",
+  "tag": "hyperos4-ae0.0.0.3",
+  "release_url": "https://github.com/poohpiggy/AE0.0.0.3-HyperOS4-Repair/releases/tag/hyperos4-ae0.0.0.3",
+  "assets_verified": [
+    {
+      "name": "archive.json",
+      "size": 1274,
+      "sha256": "76b9bc00a75e67a2725b7241c099d7024b316666387f4ca882d04a5741bf93ff",
+      "github_digest_verified": true
+    },
+    {
+      "name": "HyperOS4-AE0.0.0.3.zip.part001",
+      "size": 1610612736,
+      "sha256": "8bb22b83ceecebafbae868efc6929a4848d9bc2dac93107176bd64d12e5e5f88",
+      "github_digest_verified": true
+    },
+    {
+      "name": "HyperOS4-AE0.0.0.3.zip.part002",
+      "size": 1610612736,
+      "sha256": "02265a97c34d969c1f0c7bc3d38997e8933c17cb5eaa454360f4a4366bdcaa9b",
+      "github_digest_verified": true
+    },
+    {
+      "name": "HyperOS4-AE0.0.0.3.zip.part003",
+      "size": 1172275144,
+      "sha256": "eb168e73c2c17c2f03213e7a8453fceeda3ec8eacabfe3a3729f4eeb8015005f",
+      "github_digest_verified": true
+    },
+    {
+      "name": "HyperOS4-AE0.0.0.3.zip.sha256",
+      "size": 89,
+      "sha256": "56240908a129b80bdeeea4a2fa7c6ffdbb15985189cacf952a3c336cfcfff1de",
+      "github_digest_verified": true
+    },
+    {
+      "name": "join_release.ps1",
+      "size": 2145,
+      "sha256": "e483363fd21f38cf5771f4e52d07ee1505b7ef2a6c414a01eac7ea54c0324502",
+      "github_digest_verified": true
+    },
+    {
+      "name": "join_release.py",
+      "size": 2786,
+      "sha256": "02390e09f8ce9997fd7bbf7cac9528e05ec23312e20a40bdc1591ffde2496c69",
+      "github_digest_verified": true
+    },
+    {
+      "name": "parts.json",
+      "size": 728,
+      "sha256": "d21501dd3fd441383029a5b131ca39a68eee21191421329d0d858d93fe14eeae",
+      "github_digest_verified": true
+    },
+    {
+      "name": "README_DOWNLOAD.md",
+      "size": 1474,
+      "sha256": "55091c12fb7117015e86e5a6173c162a0700880c2280c02184958b27da13fc47",
+      "github_digest_verified": true
+    },
+    {
+      "name": "validation-update.json",
+      "size": 569,
+      "sha256": "4d36e1929bb516223cd0ae01249285dfdb78eb16ed00e029eb3887cea0aa1692",
+      "github_digest_verified": true
+    }
+  ],
+  "restored_archive": {
+    "name": "HyperOS4-AE0.0.0.3.zip",
+    "size": 4393500616,
+    "sha256": "dd01bd45975d6b8a02a69aa0080320b47e8f160781fe2bf3940ee091f2919333"
+  },
+  "device_tests": "Owner-confirmed import and run on K80 and Neo11",
+  "original_zip_bytes_changed": false
+}
