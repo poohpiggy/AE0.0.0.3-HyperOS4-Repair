@@ -1,0 +1,21 @@
+{
+  "source": "Recorded R2 base manifest",
+  "ae_baseline": "0.0.0.3",
+  "properties": {
+    "debug.hwui.renderer": "skiagl",
+    "ro.hwui.use_vulkan": "false",
+    "persist.sys.hwui.partial.vk": "false",
+    "persist.sys.vk_mode_enabled": "false",
+    "debug.flutter.renderer": "impelleropengl",
+    "debug.renderengine.backend": "skiagl",
+    "ro.hardware.vulkan": "",
+    "persist.sys.vk.com.android.settings": "0",
+    "persist.sys.vk.com.miui.home": "0",
+    "persist.sys.vk.com.android.systemui": "0",
+    "persist.sys.vk.com.miui.aod": "0",
+    "persist.sys.vk.com.miui.miwallpaper": "0",
+    "persist.sys.vk.com.android.thememanager": "0",
+    "debug.aemu.gl": "3",
+    "persist.sys.force_ignore_blur": "false"
+  }
+}
