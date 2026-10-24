@@ -25,5 +25,20 @@
       "Neo11"
     ],
     "note": "Earlier package only; not a Neo11 test of the current ZIP."
+  },
+  "owner_current_package_confirmation": {
+    "reported_on": "2026-10-24",
+    "source": "Project owner confirmation in this publication chat",
+    "archive_sha256": "f55fceb63243a7f89533de1f341f3329c7da6c83e5ce6746d69a0167d7704391",
+    "devices": [
+      {
+        "name": "K80",
+        "import_and_run": "pass"
+      },
+      {
+        "name": "Neo11",
+        "import_and_run": "pass"
+      }
+    ]
   }
 }

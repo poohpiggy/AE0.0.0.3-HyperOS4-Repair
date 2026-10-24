@@ -35,5 +35,19 @@
   "unit_test_scope": "Archive validation, joining, early-display AWK rewrite and mocked MediaProvider readiness/timeout; no phone connection.",
   "fresh_import_boot_tested": true,
   "fresh_import_evidence": "AE-native clean import acceptance dated 2026-10-24; bootCount=1 and all 56 built-in audio files indexed.",
-  "environment_changes": "No global installs, system PATH changes, ADB connection or VM modifications in this publication task."
+  "environment_changes": "No global installs, system PATH changes, ADB connection or VM modifications in this publication task.",
+  "owner_current_package_confirmation": {
+    "devices": [
+      "K80",
+      "Neo11"
+    ],
+    "result": "import and run passed",
+    "source": "Project owner report on 2026-10-24"
+  },
+  "full_size_split_join_verification": {
+    "result": "pass",
+    "size": 4475736310,
+    "sha256": "f55fceb63243a7f89533de1f341f3329c7da6c83e5ce6746d69a0167d7704391",
+    "checks": "Every part hash and restored whole ZIP hash verified by join_release.py."
+  }
 }
