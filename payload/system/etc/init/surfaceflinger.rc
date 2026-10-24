@@ -1,0 +1,22 @@
+service surfaceflinger /system/bin/aemu_hyos_shell /system/etc/aemu-compat/start-surfaceflinger.sh
+    class core animation
+    user system
+    # MIUI ADD: Display_Framerate
+    group system graphics drmrpc readproc input
+    # END Display_Framerate
+    capabilities SYS_NICE
+    onrestart restart --only-if-running zygote
+    # MIUI ADD: Performance_PerformanceEnhance
+    # task_profiles HighPerformance
+    task_profiles DisplayPerformance
+    # END Performance_PerformanceEnhance
+    # MIUI ADD: PerformanceEnhance
+    writepid /proc/mi_mem_engine/sf_pid /sys/module/metis/parameters/common_persist_vip_task
+    # END PerformanceEnhance
+
+# FIXME:Need to confirm
+# #ifdef XIAOMI_PLATFORM_MTK
+# MTK ADD
+on property:vendor.debug.sf.restart=1
+     restart surfaceflinger
+# #endif
