@@ -28,7 +28,6 @@
   "filesystem_checks": "system/vendor: e2fsck -fn exit 0",
   "fresh_import_boot_tested": true,
   "device_validation": {
-    "source": "Owner confirmation on 2026-10-24",
     "devices": [
       "K80",
       "Neo11"

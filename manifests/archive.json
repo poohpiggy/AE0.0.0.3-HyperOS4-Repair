@@ -38,7 +38,6 @@
     "audio_indexed": 56,
     "media_errors": 0,
     "payload_hashes_match": true,
-    "user_confirmed_usable": true,
     "regression_note": "R4 test guest: browser cold start, recents snapshots and 540/240 to1080/403 switching tested; R4.1 changes only first-boot media readiness wait."
   },
   "validation_source": "Post-build clean import acceptance on 2026-10-24; bootCount=1, 56 audio files indexed automatically."

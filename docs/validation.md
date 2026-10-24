@@ -34,7 +34,6 @@ system/vendor 的文件系统检查通过，ZIP 内 5 个文件的大小、SHA-2
 
 - [设备与首启记录](../reports/device-validation.json)
 - [镜像和 ZIP 成员哈希](../manifests/archive.json)
-- [上传校验](../reports/release-upload-check.json)
 - [旧包双机测试记录](../reports/history/device-validation-dd01bd45.json)
 
 ZIP 内的说明和 manifest 保留了打包时的状态，后续导入测试没有改动包体。
