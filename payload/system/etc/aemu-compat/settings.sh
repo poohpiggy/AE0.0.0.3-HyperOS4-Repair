@@ -48,6 +48,22 @@ for ae_pair in \
 done
 # Index built-in audio through MediaProvider; never copy another VM's database.
 if ! test -f "$DST/builtin-audio-indexed-r3"; then
+    # sys.boot_completed can precede MediaProvider publication on a clean import.
+    # Probe the actual user-0 provider instead of assuming that boot means ready.
+    ae_media_attempt=0
+    while :; do
+        ae_probe=$(content query --uri content://media/internal/audio/media --projection _id 2>&1) || ae_probe="Error: $ae_probe"
+        case "$ae_probe" in
+            *Error*|*Exception*|*'Could not find provider'*|'') ;;
+            *'Row:'*|*'No result found.'*) break ;;
+        esac
+        ae_media_attempt=$((ae_media_attempt + 1))
+        if test "$ae_media_attempt" -ge 150; then
+            echo "MediaProvider not ready; audio indexing will retry next boot."
+            exit 0
+        fi
+        sleep 2
+    done
     ae_scan_ok=1
     ae_scan_count=0
     for ae_dir in /product/media/audio/ringtones /product/media/audio/notifications /product/media/audio/alarms; do
