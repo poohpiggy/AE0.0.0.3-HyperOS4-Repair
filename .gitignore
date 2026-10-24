@@ -7,6 +7,7 @@
 *.partial
 *.pem
 *.key
+*.pk8
 .env
 .gh-config/
 __pycache__/
@@ -15,3 +16,7 @@ __pycache__/
 /dist/
 /work/
 /images/
+
+# Small, deliberate resource patches; no ROM or vendor APK blobs.
+!assets/AEGuestRecents.apk
+!assets/icons.static.zip
