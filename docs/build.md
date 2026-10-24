@@ -1,43 +1,43 @@
-# 这个包是怎么打出来的
+# 这个包怎么继续合并
 
-基线：**AE 0.0.0.3**。工具整理自实际使用过的 R3 构建脚本，原始路径改为命令行参数。
+发布的 ZIP 是另一段修复对话里已经完成导入验收的原文件。这次只整理上传，没有重新跑一次镜像构建，也没有连手机。
 
-## 输入与限制
+`tools/build_package.py` 是按实际合包步骤整理的参数版：从上一份已公开的包继续合入这一轮 payload、资源 overlay 和静态主题，再从原签名浏览器里展开 66 个库。它不是从原厂 ROM 开始的一键构建。
 
-- Python 3.11+；Linux 环境中的 `debugfs`、`resize2fs`、`e2fsck` 和 `bash`。
-- 精确匹配 `manifests/r2-base.json` 的 R2 导入 ZIP。旧 R2 本地包已清理，本仓库不提供从原厂 ROM 重建它的全部源码。
-- 原签名浏览器 `20.30.1021023` 的 APK，哈希须匹配应用修复说明。
-- 足够容纳原镜像、合并镜像和高压 ZIP 的磁盘空间；工作目录必须为空且路径不带空白。
-
-工具会检查输入并在单独工作目录处理镜像，不连接 ADB、不修改手机或运行中的 AE。
+需要 Python 3.11+、Linux 的 `debugfs` 和 `e2fsck`，以及上一份 SHA-256 为 `dd01bd45...` 的完整 ZIP。旧输入的精确大小和哈希保留在 `manifests/history/archive-dd01bd45.json`。
 
 ```sh
 python3 tools/build_package.py \
-  --base-zip /path/to/R2.zip \
-  --browser-apk /path/to/MIUIBrowser.apk \
-  --work-dir /path/to/empty-r3-build \
+  --base-zip /path/to/earlier-package.zip \
+  --work-dir /path/to/empty-build \
   --output-dir /path/to/output
 ```
 
-流程：比对 R2 镜像清单 → 流式提取与哈希 → 对系统镜像合入 payload → 回读校验写入文件 → 必要时扩容 → `e2fsck -fn` → ZIP level 9 / ZIP64 → 全成员解压哈希/CRC。
+工作目录必须为空且路径不带空白，不覆盖已有输出。工具只处理电脑里的镜像，不连接 ADB。
 
-公开工具经过语法和独立校验工具测试，**未在本次整理中重建 4.39 GB 包体**，因为旧基包与浏览器输入已不在保留工作区。参数化后生成包的 ZIP 时间戳和记录文本可能不同，不承诺与历史 ZIP 字节一致。
+构建过程会回读比对写入文件、跑 system/vendor 文件系统检查、ZIP64 高压缩，再解压核对所有成员。**参数整理版只做过语法/离线检查，没在这次上传中重新构建整包；重新生成的输出需要单独导入测试，也不保证与发布文件字节一致。**
 
-## 独立验证历史 ZIP
+`tools/history/build_initial_package.py` 保留上一轮工具，当前构建脚本复用它的 debugfs 帮助函数。`tools/MaskIcons.java` 是当时的圆角处理实现；本次没有重画主题图片。
+
+## 核对发布 ZIP
 
 ```sh
-python3 tools/verify_archive.py /path/to/HyperOS4-AE0.0.0.3.zip \
-  --receipt manifests/archive.json
+python3 tools/verify_archive.py /path/to/HyperOS4-AE0.0.0.3.zip --receipt manifests/archive.json
 ```
 
-它检查归档整体大小/SHA-256、成员集合、重复路径、不安全路径、各成员大小及 SHA-256，并通过完整解压触发 ZIP CRC 校验。
+会检查整包大小/哈希、成员集合、路径、每个成员的大小/SHA-256，并通过完整解压验证 CRC。
 
-## 本地测试
+## 离线检查
 
 ```sh
 python3 -m unittest discover -s tests -v
+bash -n payload/system/etc/aemu-compat/display-profile.sh
 bash -n payload/system/etc/aemu-compat/settings.sh
-bash -n payload/system/etc/aemu-compat/start-spawner.sh
 ```
 
-测试仅创建临时小 ZIP，验证正确归档可通过，损坏/缺失/多余成员与非法路径会被拒绝。它们不等价于 AE 中的启动验证。
+测试使用临时目录、假媒体服务和小 ZIP，不运行真实客体命令，也不代替手机里的测试。
+
+## 两个小资源补丁
+
+- `overlay/recents/` 是多任务资源 overlay 的源码；已使用构件为 `assets/AEGuestRecents.apk`。签名私钥不上传，重编译/签名需要自行准备 Android 构建工具及本地密钥。
+- `assets/icons.static.zip` 只含 transform_config.xml 和三张静态 PNG。图片保留原有权利，见 `NOTICE.md`。不是用户数据或完整主题目录备份。
