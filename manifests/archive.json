@@ -1,7 +1,7 @@
 {
   "archive": "HyperOS4-AE0.0.0.3.zip",
-  "size": 4393500616,
-  "sha256": "dd01bd45975d6b8a02a69aa0080320b47e8f160781fe2bf3940ee091f2919333",
+  "size": 4475736310,
+  "sha256": "f55fceb63243a7f89533de1f341f3329c7da6c83e5ce6746d69a0167d7704391",
   "compression": "ZIP Deflate level 9, ZIP64",
   "members": {
     "boot.img": {
@@ -10,30 +10,36 @@
     },
     "system.img": {
       "size": 7325818880,
-      "sha256": "5d2aace81d4b4df209d306e2a0796a4d24dee6867873089fb55b4a880ab8b4c8"
+      "sha256": "09ef3ed141e6079a63449d559f81312ac480537f4663d4b29d1e4de2bf1402f0"
     },
     "vendor.img": {
       "size": 699158528,
       "sha256": "594f8fe404d6dad21f4adc5014e6983b3d739bfd9e5f019dd3908edce87d3815"
     },
     "AE-INTEGRATED.json": {
-      "size": 2639,
-      "sha256": "a58242d05f353bd899be6ab1461d0942601b7161ca5e423f02fd05e9dbadc7be"
+      "size": 20257,
+      "sha256": "5cdd8023508f2f1a526345ea2ee2274b53e91e16254373c33b9fb13670bacee3"
     },
     "使用说明.md": {
-      "size": 1766,
-      "sha256": "7bcbb394d01bba3f7fefb307a1382fe9c1a76e6ab24ca1c3de22856220519a28"
+      "size": 1180,
+      "sha256": "c9241f4335befbfddb3f77e9bbb28df3f8be110d2305ac5ea5df69e30d9ceb5c"
     }
   },
   "filesystem_checks": "system/vendor: e2fsck -fn exit 0",
   "fresh_import_boot_tested": true,
-  "device_validation": {
-    "source": "Owner confirmation on 2026-10-24",
-    "devices": [
-      "K80",
-      "Neo11"
+  "fresh_import_validation": {
+    "date": "2026-10-24",
+    "boot_count_when_checked": 1,
+    "profile": [
+      540,
+      960,
+      240
     ],
-    "scope": "Import and run"
+    "audio_indexed": 56,
+    "media_errors": 0,
+    "payload_hashes_match": true,
+    "user_confirmed_usable": true,
+    "regression_note": "R4 test guest: browser cold start, recents snapshots and 540/240 to1080/403 switching tested; R4.1 changes only first-boot media readiness wait."
   },
-  "note": "Public filename normalized; ZIP bytes and member hashes unchanged. Historical build receipts are preserved separately."
+  "validation_source": "Post-build clean import acceptance on 2026-10-24; bootCount=1, 56 audio files indexed automatically."
 }

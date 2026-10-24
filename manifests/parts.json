@@ -2,24 +2,24 @@
   "format": "raw-binary-parts-v1",
   "archive": {
     "name": "HyperOS4-AE0.0.0.3.zip",
-    "size": 4393500616,
-    "sha256": "dd01bd45975d6b8a02a69aa0080320b47e8f160781fe2bf3940ee091f2919333"
+    "size": 4475736310,
+    "sha256": "f55fceb63243a7f89533de1f341f3329c7da6c83e5ce6746d69a0167d7704391"
   },
   "parts": [
     {
-      "name": "HyperOS4-AE0.0.0.3.zip.part001",
+      "name": "HyperOS4-AE0.0.0.3-f55fceb6.zip.part001",
       "size": 1610612736,
-      "sha256": "8bb22b83ceecebafbae868efc6929a4848d9bc2dac93107176bd64d12e5e5f88"
+      "sha256": "188cf02b76145a0ef85768d2ddde1832e7df58e3f8aa036d850e38d1be7cc75b"
     },
     {
-      "name": "HyperOS4-AE0.0.0.3.zip.part002",
+      "name": "HyperOS4-AE0.0.0.3-f55fceb6.zip.part002",
       "size": 1610612736,
-      "sha256": "02265a97c34d969c1f0c7bc3d38997e8933c17cb5eaa454360f4a4366bdcaa9b"
+      "sha256": "ff8bd43d5435ff21f3e2e40484f25ed27bbe29b7715987f75f8538c633d52350"
     },
     {
-      "name": "HyperOS4-AE0.0.0.3.zip.part003",
-      "size": 1172275144,
-      "sha256": "eb168e73c2c17c2f03213e7a8453fceeda3ec8eacabfe3a3729f4eeb8015005f"
+      "name": "HyperOS4-AE0.0.0.3-f55fceb6.zip.part003",
+      "size": 1254510838,
+      "sha256": "ce8bf1e6c3f6538a7911cedfef9248a57ffbf258fb428b36208c100b04ceb5a4"
     }
   ]
 }

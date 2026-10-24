@@ -1,43 +1,39 @@
 {
-  "checked_at": "2026-10-24T02:17:32.173773+08:00",
+  "checked_at": "2026-10-24T18:53:40.957448+08:00",
   "ae_baseline": "0.0.0.3",
+  "source_zip_sha256": "f55fceb63243a7f89533de1f341f3329c7da6c83e5ce6746d69a0167d7704391",
+  "full_zip_verification": {
+    "archive": "HyperOS4-AE-MIX2S-R4.1-Adaptive-Apps-Ringtone.zip",
+    "members_verified": 5,
+    "sha256": "f55fceb63243a7f89533de1f341f3329c7da6c83e5ce6746d69a0167d7704391"
+  },
+  "runtime_payload_hashes_verified": [
+    "/system/etc/aemu-compat/display-profile.sh",
+    "/system/etc/aemu-compat/settings.sh",
+    "/system/etc/aemu-compat/start-spawner.sh",
+    "/system/etc/aemu-compat/start-surfaceflinger.sh",
+    "/system/etc/init/surfaceflinger.rc",
+    "/system/etc/init/zz-aemu-video-surfaceflinger.rc"
+  ],
+  "resource_artifacts": [
+    {
+      "file": "assets/AEGuestRecents.apk",
+      "sha256": "83556f79e5decdbcd1764fc82793ce8d97843a779d07c07f8fdbf5a13dcf69eb",
+      "size": 8528
+    },
+    {
+      "file": "assets/icons.static.zip",
+      "sha256": "14d35b1e40817d775c15fac0fcda3600f3d9630c99ba15ac71ffd43ec4018a15",
+      "size": 200782
+    }
+  ],
+  "init_options_preserved_except_service_entry": true,
+  "duplicate_sf_service_definitions_identical": true,
   "shell_syntax": "pass",
   "xml_parse": "pass",
-  "payload_hash_matches": [
-    "payload/system/etc/aemu-compat/settings.sh",
-    "payload/system/etc/aemu-compat/start-spawner.sh",
-    "payload/system_ext/etc/permissions/aemu-mi-ext-libraries.xml",
-    "payload/system_ext/etc/permissions/aemu-rustruntime-v3.xml"
-  ],
-  "markdown_local_links": "pass",
-  "python_unit_tests": {
-    "passed": 11,
-    "scope": "synthetic archive and join success/failure cases"
-  },
-  "original_zip_stream_sha256": "dd01bd45975d6b8a02a69aa0080320b47e8f160781fe2bf3940ee091f2919333",
-  "release_parts": {
-    "count": 3,
-    "each_under_2_gib": true
-  },
+  "unit_tests_passed": 16,
+  "unit_test_scope": "Archive validation, joining, early-display AWK rewrite and mocked MediaProvider readiness/timeout; no phone connection.",
   "fresh_import_boot_tested": true,
-  "environment_changes": "No global software installation or PATH change; temporary CLI and build files scoped to task workspace.",
-  "full_original_zip_verification": {
-    "archive": "HyperOS4-AE-MIX2S-R3-1080p403-Apps-Ringtone.zip",
-    "members_verified": 5,
-    "sha256": "dd01bd45975d6b8a02a69aa0080320b47e8f160781fe2bf3940ee091f2919333"
-  },
-  "powershell_tests": {
-    "syntax": "pass",
-    "synthetic_successful_join": "pass",
-    "existing_output_preserved": "pass",
-    "corrupt_part_rejected_and_partial_removed": "pass",
-    "host_settings_changed": false
-  },
-  "full_size_join_test": {
-    "result": "pass",
-    "source": "three release parts",
-    "restored_bytes": 4393500616,
-    "restored_sha256": "dd01bd45975d6b8a02a69aa0080320b47e8f160781fe2bf3940ee091f2919333"
-  },
-  "device_validation_source": "Owner report on 2026-10-24: K80 and Neo11 import and run passed"
+  "fresh_import_evidence": "AE-native clean import acceptance dated 2026-10-24; bootCount=1 and all 56 built-in audio files indexed.",
+  "environment_changes": "No global installs, system PATH changes, ADB connection or VM modifications in this publication task."
 }

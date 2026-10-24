@@ -1,20 +1,29 @@
 {
   "reported_on": "2026-10-24",
   "timezone": "Asia/Shanghai",
-  "source": "Project owner confirmation during publication",
   "ae_baseline": "0.0.0.3",
   "archive": "HyperOS4-AE0.0.0.3.zip",
-  "archive_sha256": "dd01bd45975d6b8a02a69aa0080320b47e8f160781fe2bf3940ee091f2919333",
-  "devices": [
-    {
-      "name": "K80",
-      "import_and_run": "pass"
-    },
-    {
-      "name": "Neo11",
-      "import_and_run": "pass"
-    }
-  ],
-  "scope": "Owner-confirmed import and run; no claim of a complete per-feature test suite.",
-  "original_build_receipt_preserved": true
+  "archive_sha256": "f55fceb63243a7f89533de1f341f3329c7da6c83e5ce6746d69a0167d7704391",
+  "source": "Clean AE-native import acceptance and owner usability confirmation",
+  "fresh_import": {
+    "boot_count": 1,
+    "profile": [
+      540,
+      960,
+      240
+    ],
+    "audio_indexed": 56,
+    "media_errors": 0,
+    "payload_hashes_match": true,
+    "owner_confirmed_usable": true
+  },
+  "regression_scope": "Browser first launch, recents previews and resolution switching were checked on the immediately preceding candidate; final update only added MediaProvider readiness waiting. Resolution combinations and incoming-call listening were not all rerun on this ZIP.",
+  "earlier_package_device_tests": {
+    "sha256": "dd01bd45975d6b8a02a69aa0080320b47e8f160781fe2bf3940ee091f2919333",
+    "owner_confirmed": [
+      "K80",
+      "Neo11"
+    ],
+    "note": "Earlier package only; not a Neo11 test of the current ZIP."
+  }
 }

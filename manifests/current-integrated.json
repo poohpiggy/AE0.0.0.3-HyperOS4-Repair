@@ -1,0 +1,575 @@
+{
+  "revision": "4.1",
+  "scope": "AE guest only",
+  "changes": [
+    {
+      "path": "/system/etc/aemu-compat/display-profile.sh",
+      "sha256": "501cc2e6b4f1117c0369c0bc36e6c88c0f70bc1949314a660e688315b5edb2d4",
+      "size": 3772,
+      "mode": "0o755"
+    },
+    {
+      "path": "/system/etc/aemu-compat/start-spawner.sh",
+      "sha256": "dbe4bcaf656c6a3d7df1c83b372b200c375fe01beb705cdcc17759a7f220294c",
+      "size": 1393,
+      "mode": "0o755"
+    },
+    {
+      "path": "/system/etc/aemu-compat/start-surfaceflinger.sh",
+      "sha256": "79bce5304ff572508e3c9f661963a669b9394144cdfe2208d606259513f90138",
+      "size": 883,
+      "mode": "0o755"
+    },
+    {
+      "path": "/system/etc/init/surfaceflinger.rc",
+      "sha256": "a6a33df04534d31a7e849aa1a99b96d643ecb9c93a0542a068914adc55f07ea6",
+      "size": 780,
+      "mode": "0o644"
+    },
+    {
+      "path": "/product/overlay/AEGuestRecents/AEGuestRecents.apk",
+      "sha256": "83556f79e5decdbcd1764fc82793ce8d97843a779d07c07f8fdbf5a13dcf69eb",
+      "size": 8528,
+      "mode": "0o644"
+    },
+    {
+      "path": "/system/media/theme/default/icons",
+      "sha256": "14d35b1e40817d775c15fac0fcda3600f3d9630c99ba15ac71ffd43ec4018a15",
+      "size": 200782,
+      "mode": "0o644"
+    },
+    {
+      "path": "/system/etc/aemu-compat/settings.sh",
+      "sha256": "24eacd6e7a265aa399fe0b26cccc4e82b8fa284bdab70444918d5648e90fb8f8",
+      "size": 3686,
+      "mode": "0o755"
+    },
+    {
+      "path": "/system/etc/init/zz-aemu-video-surfaceflinger.rc",
+      "sha256": "a6a33df04534d31a7e849aa1a99b96d643ecb9c93a0542a068914adc55f07ea6",
+      "size": 780,
+      "mode": "0o644"
+    },
+    {
+      "path": "/system/etc/aemu-compat/backups/dynamicicons.disabled-r4",
+      "sha256": "22afd47bd2ac5c67256779fe3153b348b62cd3484d0c5037e4fcb204652c9e6e",
+      "size": 1215493,
+      "mode": "0o644"
+    },
+    {
+      "path": "/system/media/theme/default/dynamicicons",
+      "removed_from_scan": true
+    },
+    {
+      "path": "/product/app/MIUIBrowserOfficial/lib/arm64/lib7-Zip-JBinding.so",
+      "sha256": "05c2e7a9525b3a5e56179ccdc4d73c01ff3e5fcd364de4e2ade13c29fb09be33",
+      "size": 2558960,
+      "mode": "0o644"
+    },
+    {
+      "path": "/product/app/MIUIBrowserOfficial/lib/arm64/libAntctEncrypt.so",
+      "sha256": "c251421be0a7a81602e11bc92e8e7e6b4105771d8911676978ff4c0b37e723e7",
+      "size": 30488,
+      "mode": "0o644"
+    },
+    {
+      "path": "/product/app/MIUIBrowserOfficial/lib/arm64/libBdOEMAlgo_V1_0.so",
+      "sha256": "1302352e8644442ef96d11354d6872d934c536813c112e4f9b74375ef93ef0e7",
+      "size": 9608,
+      "mode": "0o644"
+    },
+    {
+      "path": "/product/app/MIUIBrowserOfficial/lib/arm64/libDkReaderBase.so",
+      "sha256": "340c76ea4122304dab1276ef38ceadbf321072fe58769a914dcf8e6dbf96efa5",
+      "size": 63680,
+      "mode": "0o644"
+    },
+    {
+      "path": "/product/app/MIUIBrowserOfficial/lib/arm64/libDnsChecker.so",
+      "sha256": "557044739ca233bd3f2fedd37c940430da92f6e3a0f4d22af39cfaceb19724f9",
+      "size": 206992,
+      "mode": "0o644"
+    },
+    {
+      "path": "/product/app/MIUIBrowserOfficial/lib/arm64/libDocumentProcess.so",
+      "sha256": "d36af3d4669037ae50c52c40006d5f7a873872294b23a843bac0a6b89d86b4af",
+      "size": 10737336,
+      "mode": "0o644"
+    },
+    {
+      "path": "/product/app/MIUIBrowserOfficial/lib/arm64/libEncryptorP.so",
+      "sha256": "480a0d2c9a3836806222e86f69c5139d9aca88b9e2593badfd98522eb2705822",
+      "size": 75744,
+      "mode": "0o644"
+    },
+    {
+      "path": "/product/app/MIUIBrowserOfficial/lib/arm64/libTxtFormatter.so",
+      "sha256": "010e22dc87b11cdab163c8e01a5bfd77998d7ea1a8b6528c869384a8feb216ef",
+      "size": 251142,
+      "mode": "0o644"
+    },
+    {
+      "path": "/product/app/MIUIBrowserOfficial/lib/arm64/libapminsighta.so",
+      "sha256": "2757118c91cd097190e0fa1463c3e978796a6a1842d6fd9efaead3e08933ab97",
+      "size": 104848,
+      "mode": "0o644"
+    },
+    {
+      "path": "/product/app/MIUIBrowserOfficial/lib/arm64/libapminsightb.so",
+      "sha256": "20a373d95024814ca84a88ab9811dabedafc61d75e776f567365909c43c87f52",
+      "size": 109392,
+      "mode": "0o644"
+    },
+    {
+      "path": "/product/app/MIUIBrowserOfficial/lib/arm64/libbarhopper_v3.so",
+      "sha256": "809e416b5dfdc30ba69f35d7dc7c9c884ab1ab81c8d0e1549af9f8a52cf5415a",
+      "size": 4358080,
+      "mode": "0o644"
+    },
+    {
+      "path": "/product/app/MIUIBrowserOfficial/lib/arm64/libbase64encoder_v1_4.so",
+      "sha256": "aef0278affdb62fa754dd0a22f447f35ee2bad85b7a8e48d8c2963bc6e8b1252",
+      "size": 211032,
+      "mode": "0o644"
+    },
+    {
+      "path": "/product/app/MIUIBrowserOfficial/lib/arm64/libbytehook.so",
+      "sha256": "1fa39f206cf1cb5863dc3770ec3a21339921364e647a3ab4dbb094eab83676d8",
+      "size": 59080,
+      "mode": "0o644"
+    },
+    {
+      "path": "/product/app/MIUIBrowserOfficial/lib/arm64/libc++_shared.so",
+      "sha256": "fa186b1da3930bf67d2145df09c06166ce2bb5537bb4054a4101b80b1b631c47",
+      "size": 991880,
+      "mode": "0o644"
+    },
+    {
+      "path": "/product/app/MIUIBrowserOfficial/lib/arm64/libcom.baidu.zeus.so",
+      "sha256": "e56aae07780c94b1645d41258b430b63b22ccad5677545bb0173e1382ff6d494",
+      "size": 4856647,
+      "mode": "0o644"
+    },
+    {
+      "path": "/product/app/MIUIBrowserOfficial/lib/arm64/libcrius.so",
+      "sha256": "06e0c2146df312f4c4361613434fdfac61c4c2754e255a701ca1f9072c39f6d1",
+      "size": 203600,
+      "mode": "0o644"
+    },
+    {
+      "path": "/product/app/MIUIBrowserOfficial/lib/arm64/libcriusbase.so",
+      "sha256": "3698b9ddca779e4eee73a6efdae1fdb034920333af01628eff04ad41a3028e5a",
+      "size": 96168,
+      "mode": "0o644"
+    },
+    {
+      "path": "/product/app/MIUIBrowserOfficial/lib/arm64/libdatabuffer.so",
+      "sha256": "107250e019cd2d2befca8c392168c32d57b0aa5a5fc2bd073a70a21308209bb7",
+      "size": 75624,
+      "mode": "0o644"
+    },
+    {
+      "path": "/product/app/MIUIBrowserOfficial/lib/arm64/libdkkernel.so",
+      "sha256": "65659ae48cd4a5b22729c4dbbea240044e3926f2d74d67a788ae833d52bb4a68",
+      "size": 8486240,
+      "mode": "0o644"
+    },
+    {
+      "path": "/product/app/MIUIBrowserOfficial/lib/arm64/libentryexpro.so",
+      "sha256": "78c62496188851cbc3bd15ad6fe0f607b7f9916abee25b30b007a2a66542b54d",
+      "size": 177624,
+      "mode": "0o644"
+    },
+    {
+      "path": "/product/app/MIUIBrowserOfficial/lib/arm64/libfb.so",
+      "sha256": "6cf54e5b12a34402aafb6f8e741fab64172150512e13ad5c992eb3a3927bf47a",
+      "size": 141168,
+      "mode": "0o644"
+    },
+    {
+      "path": "/product/app/MIUIBrowserOfficial/lib/arm64/libfolly_json.so",
+      "sha256": "a40405aa83ef5f0cffe2e856d1bf42e41c05c1ba7cbe79f6b0406d847f4efcfc",
+      "size": 198440,
+      "mode": "0o644"
+    },
+    {
+      "path": "/product/app/MIUIBrowserOfficial/lib/arm64/libgifimage.so",
+      "sha256": "dab19322b57857a35ec599d17a9d98982482dd13227a4b97a739fd8fd6ec3655",
+      "size": 313896,
+      "mode": "0o644"
+    },
+    {
+      "path": "/product/app/MIUIBrowserOfficial/lib/arm64/libglide-webp.so",
+      "sha256": "01d770b8fdd7bf8dfcbb33c12e8165e449b0ae0b1069d395ff15abee193664dd",
+      "size": 448840,
+      "mode": "0o644"
+    },
+    {
+      "path": "/product/app/MIUIBrowserOfficial/lib/arm64/libglog.so",
+      "sha256": "d02e677e9c3f4edfe3b0078aebd7b7a2e703bee1e40d79a815079b49b0939da1",
+      "size": 108280,
+      "mode": "0o644"
+    },
+    {
+      "path": "/product/app/MIUIBrowserOfficial/lib/arm64/libglog_init.so",
+      "sha256": "bf639b3d7b7bc341483c79054efab68a4adb1cbdf71a6d793df7d043088c77ae",
+      "size": 34608,
+      "mode": "0o644"
+    },
+    {
+      "path": "/product/app/MIUIBrowserOfficial/lib/arm64/libgnustl_shared.so",
+      "sha256": "3db2d76ab7773f2dd925bd6e471ffefdb5a621914c6fb8454615c33da92c7768",
+      "size": 1096016,
+      "mode": "0o644"
+    },
+    {
+      "path": "/product/app/MIUIBrowserOfficial/lib/arm64/libhyper_chromium.so",
+      "sha256": "1628e8431d4b484f0e383d6456fdf783b5d57768dedd67a3e04ab5d4c2cea4c6",
+      "size": 150538608,
+      "mode": "0o644"
+    },
+    {
+      "path": "/product/app/MIUIBrowserOfficial/lib/arm64/libimage_processing_util_jni.so",
+      "sha256": "2ead62ff358ae3a9e9cb5b0278a1d5132a7b410288bc74add8f6356d668fdc39",
+      "size": 28944,
+      "mode": "0o644"
+    },
+    {
+      "path": "/product/app/MIUIBrowserOfficial/lib/arm64/libimagepipeline.so",
+      "sha256": "48dd6accf4871f726f63b169de63e78625e45c2d177fbaea41a92d29d6603414",
+      "size": 10184,
+      "mode": "0o644"
+    },
+    {
+      "path": "/product/app/MIUIBrowserOfficial/lib/arm64/libkwai-linker.so",
+      "sha256": "ef3bd9fd8a51b0f417808394e815e28efae1df63f9e1fe54bee32bd478391d0b",
+      "size": 14064,
+      "mode": "0o644"
+    },
+    {
+      "path": "/product/app/MIUIBrowserOfficial/lib/arm64/liblaunch_native.so",
+      "sha256": "7af89069a6f08f2cd760785c497c5ca854ee2560aa7bd587d08210c25255eaac",
+      "size": 5880,
+      "mode": "0o644"
+    },
+    {
+      "path": "/product/app/MIUIBrowserOfficial/lib/arm64/liblocSDK8b.so",
+      "sha256": "a3094efa78f8732bae19f7f5cf55403426f12fc3ba4ce4cf3e5c163bcd82cdaa",
+      "size": 368568,
+      "mode": "0o644"
+    },
+    {
+      "path": "/product/app/MIUIBrowserOfficial/lib/arm64/libmboom.so",
+      "sha256": "57546bcd7b8834e9d391be5e58b53ad6b99c9a6ca5a33c8db917cde009436868",
+      "size": 15544,
+      "mode": "0o644"
+    },
+    {
+      "path": "/product/app/MIUIBrowserOfficial/lib/arm64/libmiui_chromium_support-21.so",
+      "sha256": "6b4b4e86a9c18c45ecde87573092df508002eadea8b02429f396f826e4e201cc",
+      "size": 9792,
+      "mode": "0o644"
+    },
+    {
+      "path": "/product/app/MIUIBrowserOfficial/lib/arm64/libmiui_chromium_support-22.so",
+      "sha256": "6163fd025e2874fa31c38573fa1a0c6808a9f3ff98396c7c37f675126b8b303a",
+      "size": 9792,
+      "mode": "0o644"
+    },
+    {
+      "path": "/product/app/MIUIBrowserOfficial/lib/arm64/libmiui_chromium_support-23.so",
+      "sha256": "ab77dff3279185eaf4e79763fb618ad34fdf2192ca51cf730b8a7a2f796c3ee2",
+      "size": 14152,
+      "mode": "0o644"
+    },
+    {
+      "path": "/product/app/MIUIBrowserOfficial/lib/arm64/libmiui_chromium_support-24.so",
+      "sha256": "125e992ee3fb0cc7021465feb4ac96819bcf086e79b3532d21bd5c0d9ea3ea35",
+      "size": 10376,
+      "mode": "0o644"
+    },
+    {
+      "path": "/product/app/MIUIBrowserOfficial/lib/arm64/libmiui_chromium_support-25.so",
+      "sha256": "804958ebb9db45cdd462814c773f09d1c21cdbe8d2da75d46d19b53ac1efb111",
+      "size": 10376,
+      "mode": "0o644"
+    },
+    {
+      "path": "/product/app/MIUIBrowserOfficial/lib/arm64/libmiui_chromium_support-26.so",
+      "sha256": "d650043a15f4fdd2d135ad71d876f7a69d9d472ce033ccac2dd744034dcd5669",
+      "size": 238840,
+      "mode": "0o644"
+    },
+    {
+      "path": "/product/app/MIUIBrowserOfficial/lib/arm64/libmiui_crashpad_handleraar.so",
+      "sha256": "d1dbd7cf84f3f9bc9a3b4a631b093ffbc9352b625e3f4975401afe5b96849fb6",
+      "size": 1348320,
+      "mode": "0o644"
+    },
+    {
+      "path": "/product/app/MIUIBrowserOfficial/lib/arm64/libmiui_lib_util.so",
+      "sha256": "d8bd3e8d237ef4f10a26b4e5034f69b61bad5c2d2ba5d02986b2187b01354cb9",
+      "size": 34728,
+      "mode": "0o644"
+    },
+    {
+      "path": "/product/app/MIUIBrowserOfficial/lib/arm64/libmmkv.so",
+      "sha256": "d44f3041bb2a52f14dddd12456644c7c5ec812b8219610422726ebc847cf4cf6",
+      "size": 527640,
+      "mode": "0o644"
+    },
+    {
+      "path": "/product/app/MIUIBrowserOfficial/lib/arm64/libnad-lib.so",
+      "sha256": "1427e0c494f82eda2fbda645f071b7c617aaff7e8b94377a9d7d64a758a3a5e2",
+      "size": 5808,
+      "mode": "0o644"
+    },
+    {
+      "path": "/product/app/MIUIBrowserOfficial/lib/arm64/libnative-filters.so",
+      "sha256": "c2c1262c74047d081a742c685d1383067d38da85cd4f2cfa24f86da6d0e0721d",
+      "size": 30592,
+      "mode": "0o644"
+    },
+    {
+      "path": "/product/app/MIUIBrowserOfficial/lib/arm64/libnative-imagetranscoder.so",
+      "sha256": "c6f0d9adf3b282a6fdf89e5dc64313f109fc071244432b09d671ae18097091ef",
+      "size": 493568,
+      "mode": "0o644"
+    },
+    {
+      "path": "/product/app/MIUIBrowserOfficial/lib/arm64/libpl_droidsonroids_gif.so",
+      "sha256": "7bc82edf7b81405efe19bc13f7b7e1350bb9331e0cc2ed45dc2b19d9367c97dc",
+      "size": 43016,
+      "mode": "0o644"
+    },
+    {
+      "path": "/product/app/MIUIBrowserOfficial/lib/arm64/libplaylet_direct_dex.so",
+      "sha256": "ac0852d41540b7d0eb9c25776692151a8941466fe55389189f2747a8741172f1",
+      "size": 10472,
+      "mode": "0o644"
+    },
+    {
+      "path": "/product/app/MIUIBrowserOfficial/lib/arm64/libplayletflipped.so",
+      "sha256": "21962d82f0ad4bb2f0a77c0d03e901241317d8da22c00d52daa25aa8dde088d5",
+      "size": 18256,
+      "mode": "0o644"
+    },
+    {
+      "path": "/product/app/MIUIBrowserOfficial/lib/arm64/libprivate-p-master.so",
+      "sha256": "241cac1184877fec360639591bd9a33f99a1d86898e0fa124c39757ccf6a1e01",
+      "size": 14256,
+      "mode": "0o644"
+    },
+    {
+      "path": "/product/app/MIUIBrowserOfficial/lib/arm64/librtmp-jni.so",
+      "sha256": "0adc21a21aa9fb2477e63ec3843bc20f4e06ef95c21447539f9204f00c62a4ec",
+      "size": 87912,
+      "mode": "0o644"
+    },
+    {
+      "path": "/product/app/MIUIBrowserOfficial/lib/arm64/libshadowhook.so",
+      "sha256": "5afb272443eafb5c6ccabf4bb019e49840aa0a22698930164a8ac0fd25de684a",
+      "size": 79464,
+      "mode": "0o644"
+    },
+    {
+      "path": "/product/app/MIUIBrowserOfficial/lib/arm64/libshadowhook_nothing.so",
+      "sha256": "f2cc6a6f94d7361be915daafff1d25b7b3af34972e7308ac540982cfd608bd32",
+      "size": 1112,
+      "mode": "0o644"
+    },
+    {
+      "path": "/product/app/MIUIBrowserOfficial/lib/arm64/libstatic-webp.so",
+      "sha256": "5b2b23510006747e8a3ca0d3c3b9ae8768109ab425a63a9a83ed180850fb2cb2",
+      "size": 608992,
+      "mode": "0o644"
+    },
+    {
+      "path": "/product/app/MIUIBrowserOfficial/lib/arm64/libswanKV.so",
+      "sha256": "55cb5e175385c75b86ae6a892ebfd7d576e58dedf57d5de549219f3d887ed312",
+      "size": 337880,
+      "mode": "0o644"
+    },
+    {
+      "path": "/product/app/MIUIBrowserOfficial/lib/arm64/libtalos_v8.so",
+      "sha256": "5549e2437ed8f41f1143b22dd4b72c1a8593af9237c679bf4bd5de661194ebad",
+      "size": 907160,
+      "mode": "0o644"
+    },
+    {
+      "path": "/product/app/MIUIBrowserOfficial/lib/arm64/libtraceroute.so",
+      "sha256": "59af2b6a185d83a8336cede56fc8746497bffc5f88a928c87498e999c6703110",
+      "size": 76664,
+      "mode": "0o644"
+    },
+    {
+      "path": "/product/app/MIUIBrowserOfficial/lib/arm64/libxcrash.so",
+      "sha256": "2f3d6625c6feb123cafa0c863e510a42580ba59892efacd739d1316df80d00ea",
+      "size": 89976,
+      "mode": "0o644"
+    },
+    {
+      "path": "/product/app/MIUIBrowserOfficial/lib/arm64/libxcrash_dumper.so",
+      "sha256": "594a6d0d8db5839c5d3fe9fb7f601c8d14141cf07b7aa8bae271f8028a8b7376",
+      "size": 118376,
+      "mode": "0o644"
+    },
+    {
+      "path": "/product/app/MIUIBrowserOfficial/lib/arm64/libxhook_lib.so",
+      "sha256": "031715920bc47e669a52b27e2e247dd1ece709dca1edc56563f42a9f0a62efee",
+      "size": 22512,
+      "mode": "0o644"
+    },
+    {
+      "path": "/product/app/MIUIBrowserOfficial/lib/arm64/libxl_torrent_parser.so",
+      "sha256": "49d3597722c574f0be4f6ebf988f522a64e908436ac4d63bbfa9fd8d132f9832",
+      "size": 231592,
+      "mode": "0o644"
+    },
+    {
+      "path": "/product/app/MIUIBrowserOfficial/lib/arm64/libyalog.so",
+      "sha256": "275bd2108e750e2db50098de98e94c4c86cc4f3acbcd96705b2677012d35fa00",
+      "size": 108800,
+      "mode": "0o644"
+    },
+    {
+      "path": "/product/app/MIUIBrowserOfficial/lib/arm64/libyoga.so",
+      "sha256": "ddcbcc17845dcc71b3dfb53ffbe140740b049b9e22dba09d4b40d21b4b0db82f",
+      "size": 198440,
+      "mode": "0o644"
+    },
+    {
+      "path": "/product/app/MIUIBrowserOfficial/lib/arm64/libzeus_direct_dex.so",
+      "sha256": "b27f7180fa5c1df139b72f45ec38f9da3252cca016ae7771e14e161a37c76e46",
+      "size": 10464,
+      "mode": "0o644"
+    },
+    {
+      "path": "/product/app/MIUIBrowserOfficial/lib/arm64/libzeusflipped.so",
+      "sha256": "cca7d29aa0da171f52d5e4c102e53a8870feddd4042f7ee4343facf13c5c6ef3",
+      "size": 10064,
+      "mode": "0o644"
+    },
+    {
+      "path": "/product/app/MIUIBrowserOfficial/lib/arm64/libzeusv8.so",
+      "sha256": "8e1ae0e7a29e8520b25c3dbf1a90b4dd0deeaa5dbfa769acede6992caeee0ca4",
+      "size": 12902376,
+      "mode": "0o644"
+    }
+  ],
+  "images": {
+    "boot.img": {
+      "size": 67108864,
+      "sha256": "1b6445680f87f9758881c61ff10229267c06dfb28d91c8e121a8cbec0ab3f9a9"
+    },
+    "system.img": {
+      "size": 7325818880,
+      "sha256": "09ef3ed141e6079a63449d559f81312ac480537f4663d4b29d1e4de2bf1402f0"
+    },
+    "vendor.img": {
+      "size": 699158528,
+      "sha256": "594f8fe404d6dad21f4adc5014e6983b3d739bfd9e5f019dd3908edce87d3815"
+    }
+  },
+  "base_revision": {
+    "revision": 3,
+    "scope": "AE guest only",
+    "changes": [
+      {
+        "path": "/system/etc/aemu-compat/backups/MIUIBrowser.original.apk",
+        "sha256": "8c097aeb2f7d9232cd9dc5c974fdf8054978482fa86a34a5e7d2afe5b9844a23",
+        "size": 2686648,
+        "mode": "0o644"
+      },
+      {
+        "path": "/product/priv-app/MIUIBrowser/MIUIBrowser.apk",
+        "removed_from_scan": true,
+        "backup": "/system/etc/aemu-compat/backups/MIUIBrowser.original.apk"
+      },
+      {
+        "path": "/product/app/MIUIBrowserOfficial/MIUIBrowser.apk",
+        "sha256": "1f5e546a133a4b6530dd183e711648a6de0d0e4c78049b646c2e52bf4035d75a",
+        "size": 259017181,
+        "mode": "0o644"
+      },
+      {
+        "path": "/system/etc/aemu-compat/settings.sh",
+        "sha256": "78438f17487b27cc9a11bdf0abbbe0f2f8ef707c0c0a0873e20e2327825711e5",
+        "size": 2956,
+        "mode": "0o755"
+      },
+      {
+        "path": "/system/etc/aemu-compat/start-spawner.sh",
+        "sha256": "81cbe05f981c5f00b6576c436cae8b294c7c86f0891a75289ac1bb9bcc9ea093",
+        "size": 2344,
+        "mode": "0o755"
+      },
+      {
+        "path": "/system_ext/etc/permissions/aemu-mi-ext-libraries.xml",
+        "sha256": "8286dc6055d835a4828b16d6ebe168e56c3bc5e0cd2e506174394db23b7c6d4a",
+        "size": 273,
+        "mode": "0o644"
+      },
+      {
+        "path": "/system_ext/etc/permissions/aemu-rustruntime-v3.xml",
+        "sha256": "00a27797e08a15a6609779f87acb744cb579a4e02ef07bc88f2fb94f84c3915d",
+        "size": 347,
+        "mode": "0o644"
+      },
+      {
+        "path": "/system/build.prop",
+        "sha256": "f80f6152dc299974dbca2cfa5b0832dc012ca4a360ac3f70a8bf4d3bced4d517",
+        "size": 13699,
+        "mode": "0o644"
+      }
+    ],
+    "images": {
+      "system.img": {
+        "size": 7325818880,
+        "sha256": "5d2aace81d4b4df209d306e2a0796a4d24dee6867873089fb55b4a880ab8b4c8"
+      },
+      "vendor.img": {
+        "size": 699158528,
+        "sha256": "594f8fe404d6dad21f4adc5014e6983b3d739bfd9e5f019dd3908edce87d3815"
+      },
+      "boot.img": {
+        "size": 67108864,
+        "sha256": "1b6445680f87f9758881c61ff10229267c06dfb28d91c8e121a8cbec0ab3f9a9"
+      }
+    },
+    "display": {
+      "resolution": [
+        1080,
+        2160
+      ],
+      "logical_dpi": 403,
+      "ae_instance_settings": "Set 1080x2160 / 403 in AE before first boot; importer may choose its own preset."
+    },
+    "filesystem_checks": "system/vendor: e2fsck -fn exit 0",
+    "validation": "Individual fixes verified on existing test guest guest; archive filesystem and every decompressed ZIP member verified. This new archive has not been fresh-import boot tested.",
+    "privacy": "No VM user-data database, account, download history, media, or private app state included."
+  },
+  "filesystem_checks": "system/vendor: e2fsck -fn exit 0",
+  "display": {
+    "adaptive_on_instance_restart": true,
+    "tested_profiles": [
+      [
+        720,
+        1280,
+        320
+      ],
+      [
+        1080,
+        2160,
+        403
+      ]
+    ],
+    "recommended_profile": [
+      1080,
+      2160,
+      403
+    ]
+  },
+  "validation": "Guest fixes tested on test guest; final ZIP not fresh-import boot tested.",
+  "privacy": "No userdata partition, accounts, private app databases or host AE settings included."
+}

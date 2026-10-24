@@ -1,25 +1,25 @@
-BASE_VERIFIED system.img 6788947968 15eb69bb8bd0bfb4a6d12d4d529ae360f01d5c791920171c9fe00d75cf79e220
-BASE_VERIFIED vendor.img 699158528 594f8fe404d6dad21f4adc5014e6983b3d739bfd9e5f019dd3908edce87d3815
-BASE_VERIFIED boot.img 67108864 1b6445680f87f9758881c61ff10229267c06dfb28d91c8e121a8cbec0ab3f9a9
-GROW_SYSTEM 100081664
-MERGE /product/app/MIUIBrowserOfficial/MIUIBrowser.apk
-MERGE /system/etc/aemu-compat/settings.sh
-MERGE /system/etc/aemu-compat/start-spawner.sh
-MERGE /system_ext/etc/permissions/aemu-mi-ext-libraries.xml
-MERGE /system_ext/etc/permissions/aemu-rustruntime-v3.xml
+EXTRACT_R3 boot.img
+EXTRACT_R3 system.img
+EXTRACT_R3 vendor.img
+INSTALL /system/etc/aemu-compat/display-profile.sh
+INSTALL /system/etc/aemu-compat/start-spawner.sh
+INSTALL /system/etc/aemu-compat/start-surfaceflinger.sh
+INSTALL /system/etc/init/surfaceflinger.rc
+INSTALL /product/overlay/AEGuestRecents/AEGuestRecents.apk
+INSTALL /system/media/theme/default/icons
+BROWSER_LIBRARIES 66
 FSCK system.img
 FSCK vendor.img
+HASH boot.img
 HASH system.img
 HASH vendor.img
-HASH boot.img
 ZIP9 boot.img
 ZIP9 system.img
 ZIP9 vendor.img
 ZIP9 AE-INTEGRATED.json
 ZIP9 使用说明.md
-VERIFY_ZIP boot.img 22824078 67108864
-VERIFY_ZIP system.img 4055491074 7325818880
-VERIFY_ZIP vendor.img 315182414 699158528
-VERIFY_ZIP AE-INTEGRATED.json 1158 2639
-VERIFY_ZIP 使用说明.md 1216 1766
-READY {"archive": "HyperOS4-AE-MIX2S-R3-1080p403-Apps-Ringtone.zip", "size": 4393500616, "sha256": "dd01bd45975d6b8a02a69aa0080320b47e8f160781fe2bf3940ee091f2919333", "compression": "ZIP Deflate level 9, ZIP64", "members": {"boot.img": {"size": 67108864, "sha256": "1b6445680f87f9758881c61ff10229267c06dfb28d91c8e121a8cbec0ab3f9a9"}, "system.img": {"size": 7325818880, "sha256": "5d2aace81d4b4df209d306e2a0796a4d24dee6867873089fb55b4a880ab8b4c8"}, "vendor.img": {"size": 699158528, "sha256": "594f8fe404d6dad21f4adc5014e6983b3d739bfd9e5f019dd3908edce87d3815"}, "AE-INTEGRATED.json": {"size": 2639, "sha256": "a58242d05f353bd899be6ab1461d0942601b7161ca5e423f02fd05e9dbadc7be"}, "使用说明.md": {"size": 1766, "sha256": "7bcbb394d01bba3f7fefb307a1382fe9c1a76e6ab24ca1c3de22856220519a28"}}, "filesystem_checks": "system/vendor: e2fsck -fn exit 0", "fresh_import_boot_tested": false}
+VERIFY_ZIP boot.img
+VERIFY_ZIP system.img
+VERIFY_ZIP vendor.img
+VERIFY_ZIP AE-INTEGRATED.json
+VERIFY_ZIP 使用说明.md
